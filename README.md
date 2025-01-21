@@ -1,2 +1,3 @@
-# dkashnitsky.github.io
-personal website
+# Daniel Kashnitsky
+
+Welcome to my personal website
