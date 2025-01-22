@@ -1,13 +1,18 @@
 project:
   type: website
 
-website:
-  title: "Daniel Kashnitsky, PhD"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - cv.qmd
+  preview:
+    port: 4445
+    browser: true
+    watch-inputs: true
+    navigate: true
+
+  render:
+    - "*.qmd"
+    - "*.md"
+
+  resources:
+    - "img/**"
 
 format:
   html:
@@ -15,5 +20,62 @@ format:
     css: styles.css
     toc: true
 
-editor: visual
+editor: source
 
+
+# Metadata stuff
+pagetitle: "{{< meta title >}}"
+description-meta: "{{< meta description >}}"
+author-meta: "Daniel Kashnitsky"
+
+website:
+  title: "Daniel Kashnitsky"
+  description: "Dr. Daniel Kashnitsky is a postdoc @ Université Paris Cité."
+  favicon: "/img/dk-logo.png"
+  site-url: "https://dkashnitsky.github.io"
+  repo-url: "https://github.com/dkashnitsky/dkashnitsky.github.io"
+
+  open-graph:
+    # image: "/img/card-tw.png"
+    locale: en_US
+
+
+  navbar:
+    pinned: true
+
+    left:
+      - text: "CV"
+        file: "cv.qmd"
+
+    right:
+      - icon: github
+        aria-label: github
+        href: https://github.com/dkashnitsky
+      - icon: linkedin
+        aria-label: linkedin
+        href: https://www.linkedin.com/in/daniel-kashnitsky-5038661
+      - icon: facebook
+        aria-label: facebook
+        href: https://www.facebook.com/daniel.kashnitsky
+      - icon: check-circle-fill  # lightbulb-fill image-fill globe2 mask image-fill sun-fill people
+        aria-label: bluesky
+        href: https://bsky.app/profile/danielkash.bsky.social
+      - icon: envelope-fill
+        aria-label: email
+        href: "mailto:kashnitsky@gmail.com"
+
+
+  body-header: |
+      <script src="https://cdn.counter.dev/script.js" data-id="959b0eea-4d96-4e48-9c74-a9f59332e49c" data-utcoffset="1"></script>
+
+  page-footer:
+    left: |
+      <span class="faux-block">{{< fa brands creative-commons >}} {{< var years >}} Daniel Kashnitsky</span><br />
+      <span class="faux-block">[{{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-sa >}} Creative Commons CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)</span>
+    center: |
+      <span class="faux-block">{{< fa brands orcid >}} <strong>ORCID</strong> [{{< var orcid >}}](https://orcid.org/{{< var orcid >}})</span><br />
+      <span class="faux-block"><a rel="me" href="https://bsky.app/profile/danielkash.bsky.social"><strong>BlueSky</strong></a></span>
+
+    right: |
+      <span class="faux-block">Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)</span><br />
+      <span class="faux-block">[View the source at {{< fa brands github >}} GitHub]({{< var github-url >}})</span>
