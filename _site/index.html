@@ -1,131 +1,756 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Kashnitsky - Public Health & Migration Expert</title>
-    <meta name="description" content="Public health and migration expert with 15+ years' experience in academic research, international advocacy, and policy change. Adviser to WHO, UN agencies, and EU bodies." />
-    <meta name="author" content="Daniel Kashnitsky" />
-    <meta name="keywords" content="public health, migration, HIV, tuberculosis, WHO, epidemiology, research, policy" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <meta property="og:title" content="Daniel Kashnitsky - Public Health & Migration Expert" />
-    <meta property="og:description" content="Public health and migration expert with 15+ years' experience in academic research, international advocacy, and policy change." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/733c9b91-7090-4a85-a126-b7cdb1670d11/id-preview-508bef1c--0d6d5afe-d201-4c98-a7b0-4ceb952ec200.lovable.app-1755364118328.png" />
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+            /* ЗАМЕНИТЕ НА ПУТЬ К ВАШЕМУ ФОНУ ИЛИ ОСТАВЬТЕ ГРАДИЕНТ */
+            background: url('path/to/your/background-image.jpg') center/cover fixed;
+            /* Запасной градиентный фон, если изображение не загрузится */
+            background: linear-gradient(135deg, #f0f4f8 0%, #d6e7f0 25%, #bdd4ea 50%, #a8c5e0 75%, #94b8d6 100%);
+            min-height: 100vh;
+        }
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/733c9b91-7090-4a85-a126-b7cdb1670d11/id-preview-508bef1c--0d6d5afe-d201-4c98-a7b0-4ceb952ec200.lovable.app-1755364118328.png" />
-    <script type="module" crossorigin src="/assets/index-C8_etMV9.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CZVqpEnw.css">
-  
-<style>
-	#lovable-badge {
-		position: fixed;
-		bottom: 10px;
-		right: 10px;
-		width: 141px;
-		padding: 5px 13px;	
-		background-color: #000;
-		color: #fff;
-		font-size: 12px;
-		border-radius: 5px;
-		font-family: sans-serif;
-		display: flex;
-		align-items: center;
-		gap: 4px;
-		z-index: 1000000;
-		text-transform: none !important;
-		font-feature-settings: normal !important;
-		font-weight: 400 !important;
-	}
-</style>
-<script defer src="https://daniel-kashnitsky-cv.lovable.app/~flock.js" data-proxy-url="https://daniel-kashnitsky-cv.lovable.app/~api/analytics"></script></head>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-  <body>
-    <div id="root"></div>
-  
-<a id="lovable-badge" target="_blank" href="https://lovable.dev/projects/0d6d5afe-d201-4c98-a7b0-4ceb952ec200?utm_source=lovable-badge">
-	<span style="color: #A1A1AA;">Edit with</span> <svg width="60" height="12" viewBox="0 0 116 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M109.108 21.115C107.649 21.115 106.381 20.8369 105.306 20.2807C104.23 19.7154 103.391 18.8675 102.789 17.7369C102.196 16.6063 101.9 15.2068 101.9 13.5382C101.9 11.9518 102.21 10.5841 102.83 9.4353C103.45 8.27736 104.307 7.3975 105.401 6.79574C106.495 6.19398 107.74 5.89309 109.135 5.89309C110.475 5.89309 111.665 6.18486 112.705 6.76839C113.744 7.35192 114.551 8.19986 115.125 9.31221C115.709 10.4246 116.001 11.7557 116.001 13.3057C116.001 13.8619 115.996 14.3041 115.987 14.6324H105.087V11.7603H113.347L111.788 12.2937C111.788 11.546 111.679 10.9215 111.46 10.42C111.25 9.90941 110.94 9.52647 110.53 9.27118C110.12 9.01588 109.623 8.88824 109.039 8.88824C108.428 8.88824 107.89 9.03868 107.425 9.33956C106.97 9.63133 106.614 10.069 106.359 10.6525C106.112 11.236 105.989 11.9381 105.989 12.7587V14.1674C105.989 15.0062 106.117 15.7174 106.372 16.3009C106.628 16.8844 106.992 17.3266 107.466 17.6275C107.941 17.9193 108.501 18.0651 109.149 18.0651C109.86 18.0651 110.448 17.8828 110.913 17.5181C111.378 17.1443 111.67 16.62 111.788 15.9453H115.932C115.805 17.0029 115.444 17.9193 114.852 18.6943C114.268 19.4693 113.489 20.0665 112.513 20.4859C111.537 20.9053 110.402 21.115 109.108 21.115Z" fill="#FCFBF8"/>
-<path d="M96.5167 1.1061H100.661V20.7181H96.5167V1.1061Z" fill="#FCFBF8"/>
-<path d="M89.4649 21.1148C88.6808 21.1148 87.9788 20.978 87.3588 20.7045C86.7479 20.4309 86.2282 20.0207 85.7996 19.4736C85.3711 18.9174 85.052 18.2336 84.8423 17.4221L85.2799 17.5452V20.7182H81.177V6.28948H85.321V9.51713L84.856 9.59919C85.0657 8.82419 85.3848 8.16316 85.8133 7.6161C86.251 7.05992 86.7844 6.63595 87.4135 6.34419C88.0426 6.04331 88.7492 5.89287 89.5333 5.89287C90.7095 5.89287 91.7307 6.19831 92.5968 6.80919C93.463 7.42007 94.1286 8.29992 94.5936 9.44875C95.0586 10.5885 95.2911 11.9424 95.2911 13.5107C95.2911 15.0698 95.054 16.4237 94.5799 17.5726C94.1058 18.7123 93.4265 19.5876 92.5421 20.1984C91.6668 20.8093 90.6411 21.1148 89.4649 21.1148ZM88.1794 17.9555C88.7994 17.9555 89.3191 17.7732 89.7385 17.4084C90.167 17.0437 90.4861 16.5286 90.6958 15.863C90.9146 15.1974 91.0241 14.4133 91.0241 13.5107C91.0241 12.608 90.9146 11.8239 90.6958 11.1583C90.4861 10.4927 90.167 9.97757 89.7385 9.61286C89.3191 9.23904 88.7994 9.05213 88.1794 9.05213C87.5685 9.05213 87.0442 9.23904 86.6066 9.61286C86.178 9.97757 85.8544 10.4973 85.6355 11.172C85.4167 11.8376 85.3073 12.6171 85.3073 13.5107C85.3073 14.4133 85.4167 15.1974 85.6355 15.863C85.8544 16.5286 86.178 17.0437 86.6066 17.4084C87.0442 17.7732 87.5685 17.9555 88.1794 17.9555ZM81.177 1.1061H85.321V6.28948H81.177V1.1061Z" fill="#FCFBF8"/>
-<path d="M70.7749 21.115C69.8723 21.115 69.0608 20.9372 68.3405 20.5816C67.6293 20.226 67.0686 19.72 66.6583 19.0635C66.2571 18.3979 66.0565 17.6229 66.0565 16.7385C66.0565 15.3891 66.4531 14.3588 67.2464 13.6476C68.0396 12.9274 69.1839 12.4578 70.6792 12.239L73.182 11.8834C73.6834 11.8104 74.08 11.7193 74.3718 11.6099C74.6636 11.5004 74.8778 11.3546 75.0146 11.1722C75.1514 10.9807 75.2197 10.7391 75.2197 10.4474C75.2197 10.1465 75.1377 9.87294 74.9736 9.62677C74.8186 9.37147 74.5815 9.17088 74.2624 9.025C73.9524 8.87 73.574 8.7925 73.1272 8.7925C72.4161 8.7925 71.8462 8.97941 71.4177 9.35324C70.9892 9.71794 70.7567 10.2194 70.7202 10.8576H66.4395C66.4759 9.89118 66.7677 9.03412 67.3148 8.28647C67.8709 7.52971 68.6414 6.94162 69.6261 6.52221C70.6108 6.1028 71.7505 5.89309 73.0452 5.89309C74.4037 5.89309 75.5525 6.11648 76.4917 6.56324C77.4308 7.00089 78.1374 7.63 78.6115 8.45059C79.0947 9.27118 79.3364 10.2513 79.3364 11.391V17.4087C79.3364 18.056 79.382 18.6578 79.4731 19.214C79.5734 19.761 79.7147 20.1075 79.8971 20.2534V20.7184H75.589C75.4887 20.3263 75.4112 19.8841 75.3565 19.3918C75.3018 18.8994 75.2699 18.3797 75.2608 17.8326L75.9309 17.5454C75.7577 18.1928 75.4386 18.79 74.9736 19.3371C74.5177 19.875 73.9296 20.3081 73.2093 20.6363C72.4981 20.9554 71.6867 21.115 70.7749 21.115ZM72.3067 18.0788C72.8902 18.0788 73.4053 17.9512 73.8521 17.6959C74.2989 17.4315 74.6408 17.0668 74.8778 16.6018C75.124 16.1368 75.2471 15.6079 75.2471 15.0153V13.1279L75.589 13.3194C75.3702 13.6112 75.0967 13.8346 74.7684 13.9896C74.4493 14.1446 74.0162 14.2768 73.4692 14.3862L72.4161 14.5913C71.714 14.7281 71.1852 14.9378 70.8296 15.2204C70.4831 15.5031 70.3099 15.8997 70.3099 16.4103C70.3099 16.9209 70.4968 17.3266 70.8706 17.6275C71.2445 17.9284 71.7231 18.0788 72.3067 18.0788Z" fill="#FCFBF8"/>
-<path d="M51.962 6.28958H56.3659L60.1542 18.6668H58.8276L62.4656 6.28958H66.7463L61.7544 20.7182H57.1454L51.962 6.28958Z" fill="#FCFBF8"/>
-<path d="M45.4846 21.115C44.0531 21.115 42.7949 20.805 41.7099 20.185C40.634 19.565 39.7997 18.6806 39.2071 17.5318C38.6236 16.3829 38.3318 15.0381 38.3318 13.4972C38.3318 11.9563 38.6236 10.616 39.2071 9.47633C39.7997 8.3275 40.634 7.44309 41.7099 6.82309C42.7949 6.20309 44.0531 5.89309 45.4846 5.89309C46.916 5.89309 48.1697 6.20309 49.2456 6.82309C50.3215 7.44309 51.1512 8.3275 51.7347 9.47633C52.3274 10.616 52.6237 11.9563 52.6237 13.4972C52.6237 15.0381 52.3274 16.3829 51.7347 17.5318C51.1512 18.6806 50.3215 19.565 49.2456 20.185C48.1697 20.805 46.916 21.115 45.4846 21.115ZM45.4846 17.9421C46.0863 17.9421 46.6015 17.7779 47.03 17.4497C47.4585 17.1123 47.7868 16.6154 48.0147 15.959C48.2427 15.2934 48.3566 14.4728 48.3566 13.4972C48.3566 12.0475 48.1059 10.9488 47.6044 10.2012C47.103 9.44441 46.3963 9.06603 45.4846 9.06603C44.8828 9.06603 44.3631 9.23471 43.9255 9.57206C43.4969 9.9003 43.1687 10.3972 42.9408 11.0628C42.7128 11.7193 42.5988 12.5307 42.5988 13.4972C42.5988 14.4637 42.7128 15.2797 42.9408 15.9453C43.1687 16.6109 43.4969 17.1123 43.9255 17.4497C44.3631 17.7779 44.8828 17.9421 45.4846 17.9421Z" fill="#FCFBF8"/>
-<path d="M26.2195 1.10631H30.514V17.6623L29.7481 16.7734C29.7481 16.7734 31.8751 16.7734 35.534 16.7734C39.1928 16.7734 38.6925 20.7184 38.6925 20.7184H26.2195V1.10631Z" fill="#FCFBF8"/>
-<mask id="mask0_19703_15608" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="21">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M5.90405 0.885124C9.16477 0.885124 11.8081 3.53543 11.8081 6.80474V9.05456H13.773C17.0337 9.05456 19.677 11.7049 19.677 14.9742C19.677 18.2435 17.0337 20.8938 13.773 20.8938H0V6.80474C0 3.53543 2.64333 0.885124 5.90405 0.885124Z" fill="url(#paint0_linear_19703_15608)"/>
-</mask>
-<g mask="url(#mask0_19703_15608)">
-<g filter="url(#filter0_f_19703_15608)">
-<circle cx="8.63157" cy="11.5658" r="13.3199" fill="#4B73FF"/>
-</g>
-<g filter="url(#filter1_f_19703_15608)">
-<ellipse cx="10.0949" cy="4.25612" rx="17.0591" ry="13.3199" fill="#FF66F4"/>
-</g>
-<g filter="url(#filter2_f_19703_15608)">
-<ellipse cx="12.8775" cy="1.74957" rx="13.3199" ry="11.6977" fill="#FF0105"/>
-</g>
-<g filter="url(#filter3_f_19703_15608)">
-<circle cx="10.3319" cy="4.25254" r="8.01052" fill="#FE7B02"/>
-</g>
-</g>
-<defs>
-<filter id="filter0_f_19703_15608" x="-10.6577" y="-7.72354" width="38.5786" height="38.5786" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="2.98472" result="effect1_foregroundBlur_19703_15608"/>
-</filter>
-<filter id="filter1_f_19703_15608" x="-12.9337" y="-15.0332" width="46.057" height="38.5786" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="2.98472" result="effect1_foregroundBlur_19703_15608"/>
-</filter>
-<filter id="filter2_f_19703_15608" x="-6.41182" y="-15.9176" width="38.5786" height="35.3342" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="2.98472" result="effect1_foregroundBlur_19703_15608"/>
-</filter>
-<filter id="filter3_f_19703_15608" x="-3.64803" y="-9.72742" width="27.9599" height="27.9599" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="2.98472" result="effect1_foregroundBlur_19703_15608"/>
-</filter>
-<linearGradient id="paint0_linear_19703_15608" x1="6.62168" y1="4.40129" x2="12.6165" y2="20.8863" gradientUnits="userSpaceOnUse">
-<stop offset="0.025" stop-color="#FF8E63"/>
-<stop offset="0.56" stop-color="#FF7EB0"/>
-<stop offset="0.95" stop-color="#4B73FF"/>
-</linearGradient>
-</defs>
-</svg>
+        .header {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 50px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
 
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
 
-	<button id="lovable-badge-close" style="position: absolute; top: -2px; right: 5px; cursor: pointer; font-size: 14px; color: #A1A1AA;">&times;</button>
-</a>
-<script>
-	// Don't show the lovable-badge if the page is in an iframe or if it's being rendered by puppeteer (screenshot service)
-	if (window.self !== window.top || navigator.userAgent.includes('puppeteer')) {
-		// the page is in an iframe
-		var badge = document.getElementById('lovable-badge');
-		if (badge) {
-			badge.style.display = 'none';
-		}
-	}
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 6px solid transparent;
+            background: linear-gradient(135deg, #6b9bd2, #a8c5e0, #94b8d6, #7fa7d3) border-box;
+            background-clip: padding-box;
+            box-shadow: 0 8px 32px rgba(107, 155, 210, 0.2);
+            transition: all 0.4s ease;
+            flex-shrink: 0;
+            position: relative;
+            /* ЗАМЕНИТЕ НА ПУТЬ К ВАШЕМУ ФОТО */
+            background-image: url('path/to/your/profile-photo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-color: #e8f2fd;
+        }
 
-	// Add click event listener to close button
-	var closeButton = document.getElementById('lovable-badge-close');
-	if (closeButton) {
-		closeButton.addEventListener('click', function(event) {
-			event.preventDefault();
-			event.stopPropagation();
-			var badge = document.getElementById('lovable-badge');
-			if (badge) {
-				badge.style.display = 'none';
-			}
-		});
-	}
-</script>
+        .profile-img::before {
+            content: '';
+            position: absolute;
+            top: -6px;
+            left: -6px;
+            right: -6px;
+            bottom: -6px;
+            background: linear-gradient(45deg, #a8c5e0, #6b9bd2, #4a8bc2, #6b9bd2, #a8c5e0);
+            background-size: 300% 300%;
+            border-radius: 50%;
+            z-index: -1;
+            animation: gradientRotate 4s ease infinite;
+        }
+
+        @keyframes gradientRotate {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 40px rgba(107, 155, 210, 0.3);
+        }
+
+        .header-text {
+            flex: 1;
+        }
+
+        h1 {
+            font-size: 3.2rem;
+            margin-bottom: 12px;
+            color: #1e293b;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+
+        .subtitle {
+            font-size: 1.4rem;
+            color: #6b9bd2;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .bio {
+            color: #4a5568;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            max-width: none;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #4a5568;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            padding: 8px 16px;
+            border-radius: 12px;
+            background: rgba(107, 155, 210, 0.08);
+            border: 1px solid rgba(107, 155, 210, 0.15);
+        }
+
+        .contact-item:hover {
+            color: #6b9bd2;
+            background: rgba(107, 155, 210, 0.15);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(107, 155, 210, 0.2);
+        }
+
+        .contact-item i {
+            font-size: 1.2rem;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 35px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .section:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+        }
+
+        .section h2 {
+            font-size: 1.9rem;
+            margin-bottom: 25px;
+            color: #2d3748;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 600;
+        }
+
+        .section h2 i {
+            color: #6b9bd2;
+            font-size: 1.5rem;
+        }
+
+        .experience-item,
+        .education-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .experience-item:last-child,
+        .education-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .job-title,
+        .degree-title {
+            font-weight: 600;
+            color: #2d3748;
+            font-size: 1.15rem;
+        }
+
+        .company,
+        .institution {
+            color: #6b9bd2;
+            font-weight: 500;
+            margin: 5px 0;
+        }
+
+        .period {
+            color: #718096;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+
+        .description {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            padding: 5px 0;
+            color: #555;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .skill-list li::before {
+            content: '▸';
+            color: #667eea;
+            position: absolute;
+            left: 0;
+        }
+
+        .publications-section {
+            grid-column: 1 / -1;
+        }
+
+        .publication-item {
+            margin-bottom: 20px;
+            padding: 25px;
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+            border-radius: 16px;
+            border-left: 4px solid #6b9bd2;
+            transition: all 0.3s ease;
+        }
+
+        .publication-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 6px 25px rgba(107, 155, 210, 0.15);
+        }
+
+        .publication-title {
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        .publication-details {
+            color: #718096;
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+        }
+
+        .publication-link {
+            color: #6b9bd2;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .publication-link:hover {
+            text-decoration: underline;
+            color: #5a8bc4;
+        }
+
+        .download-cv {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .cv-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #6b9bd2, #5a8bc4);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 32px rgba(107, 155, 210, 0.3);
+            font-size: 1.05rem;
+        }
+
+        .cv-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(107, 155, 210, 0.4);
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 30px;
+            }
+            
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .contact-info {
+                justify-content: center;
+                gap: 15px;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .bio {
+                font-size: 1rem;
+            }
+            
+            .section {
+                padding: 25px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header {
+                padding: 30px;
+            }
+        }
+
+        /* Анимации появления */
+        .section {
+            animation: slideUp 0.6s ease forwards;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .section:nth-child(1) { animation-delay: 0.1s; }
+        .section:nth-child(2) { animation-delay: 0.2s; }
+        .section:nth-child(3) { animation-delay: 0.3s; }
+        .section:nth-child(4) { animation-delay: 0.4s; }
+
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header {
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Заголовок -->
+        <header class="header">
+            <div class="header-content">
+                <div class="profile-img"></div>
+                <div class="header-text">
+                    <h1>Daniel Kashnitsky</h1>
+                    <p class="subtitle">Public Health & Migration Expert • PhD in Sociology & Demography</p>
+                    <p class="bio">
+                        Public health and migration expert with 15+ years' experience bridging academic research, international advocacy, and policy change across Eastern Europe, Central Asia, and the EU. PhD in Sociology & Demography (Sorbonne). Proven track record in leading multi-country projects on HIV, TB, and health equity for migrant populations and vulnerable communities. Expert adviser to WHO, UN agencies, and EU bodies. Recognized for building cross-sector coalitions and translating evidence into impactful policy solutions.
+                    </p>
+                    <div class="contact-info">
+                        <a href="mailto:kashnitsky@gmail.com" class="contact-item">
+                            <!-- ОБНОВЛЕННЫЙ EMAIL -->
+                            <i class="fas fa-envelope"></i>
+                            <span>kashnitsky@gmail.com</span>
+                        </a>
+                        <a href="tel:+33758884911" class="contact-item">
+                            <!-- ОБНОВЛЕННЫЙ ТЕЛЕФОН -->
+                            <i class="fas fa-phone"></i>
+                            <span>+33 7 58 88 49 11</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/daniel-kashnitsky-5038661/" class="contact-item" target="_blank">
+                            <!-- ОБНОВЛЕННАЯ ССЫЛКА LINKEDIN -->
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://orcid.org/0000-0000-0000-0000" class="contact-item" target="_blank">
+                            <!-- ЗАМЕНИТЕ НА ВАШ ORCID ID -->
+                            <i class="fab fa-orcid"></i>
+                            <span>ORCID</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Основной контент -->
+        <div class="content">
+            <!-- Опыт работы -->
+            <section class="section">
+                <h2>
+                    <i class="fas fa-briefcase"></i>
+                    Experience
+                </h2>
+                
+                <div class="experience-item">
+                    <div class="job-title">Chair of the Board & Academic Relations</div>
+                    <div class="company">Regional Expert Group on Migration and Health</div>
+                    <div class="period">2020 - Present</div>
+                    <div class="description">
+                        Lead operational research and advocacy initiatives improving access to healthcare for migrants across Eastern Europe and Central Asia. Contributed to adoption of national laws in three EECA countries enabling transnational HIV care for migrants. Managed secretariat team overseeing annual budget of ~USD 150K.
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-title">Postdoctoral Researcher</div>
+                    <div class="company">Cermes3, Paris Cité University, France</div>
+                    <div class="period">2023 - Present</div>
+                    <div class="description">
+                        Leading ANRS-MIE (INSERM)-funded project 'East-European Refugees in Receiving Countries' examining barriers and community engagement to improve access to HIV and TB care. Founded network uniting community-based and academic researchers. Laureate, PAUSE Program, Collège de France.
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-title">Community, Rights and Gender Program Manager</div>
+                    <div class="company">TB Europe Coalition, Kyiv, Ukraine</div>
+                    <div class="period">2019 - 2020</div>
+                    <div class="description">
+                        Coordinated development of training modules and guidelines for members across Eastern Europe and Central Asia. Represented Coalition in WHO and Stop TB Partnership expert groups. Led initiatives addressing gender, age, and human-rights barriers to HIV, TB services.
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-title">Technical Support Specialist</div>
+                    <div class="company">European and Central Asia Union of People Living with HIV</div>
+                    <div class="period">2017 - 2018</div>
+                    <div class="description">
+                        Provided technical support to community organizations in 10 EECA countries for Global Fund regional program. Led regional advocacy campaign promoting migrants' rights to access HIV and TB care across EECA region.
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-title">Program Manager, Sustainability and Transition Team</div>
+                    <div class="company">Eurasian Harm Reduction Association, Vilnius, Lithuania</div>
+                    <div class="period">2015 - 2017</div>
+                    <div class="description">
+                        Managed Global Fund project 'Equitable Access to HIV Care Continuum in the EECA Region' in 7 countries. Led Eurasian Regional Consortium project funded by Robert Carr Fund. Directed program monitoring and evaluation.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Образование -->
+            <section class="section">
+                <h2>
+                    <i class="fas fa-graduation-cap"></i>
+                    Education
+                </h2>
+                
+                <div class="education-item">
+                    <div class="degree-title">PhD in Sociology and Demography</div>
+                    <div class="institution">Doctoral school 624, Sorbonne, Paris</div>
+                    <div class="period">2023</div>
+                    <div class="description">
+                        Dissertation: "Barriers and informal strategies to access medical care for irregular labor migrants living with HIV in Russia." 180 credits.
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="degree-title">Guest PhD Scholar</div>
+                    <div class="institution">Linköping University, Sweden</div>
+                    <div class="period">2019 - 2020</div>
+                    <div class="description">
+                        Research Center for Migration, Ethnicity and Society under supervision of Anna Bredström. Scholarship from the Swedish Institute.
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="degree-title">Master of Science in Public Health</div>
+                    <div class="institution">Lund University, Sweden</div>
+                    <div class="period">2009 - 2011</div>
+                    <div class="description">
+                        Concentration: epidemiology and biostatistics, health communication, social diseases, reproductive health, and rights. 120 credits.
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="degree-title">Specialist in Theoretical and Applied Linguistics</div>
+                    <div class="institution">Moscow State University, Russia</div>
+                    <div class="period">1998 - 2003</div>
+                    <div class="description">
+                        Comprehensive linguistic training with focus on theoretical and applied aspects of language studies.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Навыки -->
+            <section class="section">
+                <h2>
+                    <i class="fas fa-cogs"></i>
+                    Skills & Expertise
+                </h2>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <ul class="skill-list">
+                            <li>Russian (Native)</li>
+                            <li>English (Advanced)</li>
+                            <li>French (Advanced)</li>
+                            <li>Hebrew (Intermediate)</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Key Competencies</h3>
+                        <ul class="skill-list">
+                            <li>Migration & Global Health Policy</li>
+                            <li>HIV/TB Program Design & Evaluation</li>
+                            <li>Advocacy & Strategic Communication</li>
+                            <li>Academic Research & Publications</li>
+                            <li>International Stakeholder Engagement</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Technical Skills</h3>
+                        <ul class="skill-list">
+                            <li>MS Office & Google Tools</li>
+                            <li>NVIVO & Atlas.ti</li>
+                            <li>Qualitative Data Analysis</li>
+                            <li>Professional AI Use</li>
+                            <li>Social Media Management</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Grant & Donor Relations</h3>
+                        <ul class="skill-list">
+                            <li>Global Fund</li>
+                            <li>UNAIDS</li>
+                            <li>EU Funding</li>
+                            <li>Robert Carr Fund</li>
+                            <li>Capacity Building & Empowerment</li>
+                            <li>Cross-cultural Sensitivity</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Достижения и волонтерство -->
+            <section class="section">
+                <h2>
+                    <i class="fas fa-heart"></i>
+                    Volunteering & Civil Society
+                </h2>
+                
+                <div class="experience-item">
+                    <div class="job-title">Volunteer Coordinator</div>
+                    <div class="company">Melograno Association, France</div>
+                    <div class="period">2023 - Present</div>
+                    <div class="description">
+                        Coordinator of the Sleeping Bags for Ukraine initiative, managing crowdfunding campaigns for Ukrainian civil society.
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-title">Board Member</div>
+                    <div class="company">TB Europe Coalition</div>
+                    <div class="period">2021 - Present</div>
+                    <div class="description">
+                        Contributing to policy advocacy and strategic direction for tuberculosis response across Europe.
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-title">Board Member</div>
+                    <div class="company">Health Advocacy Coalition</div>
+                    <div class="period">2023 - Present</div>
+                    <div class="description">
+                        Advancing health advocacy initiatives and policy development for vulnerable populations.
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-title">Member (RCC-THV)</div>
+                    <div class="company">WHO EURO Regional Collaborating Committee</div>
+                    <div class="period">2020 - Present</div>
+                    <div class="description">
+                        Contributing expertise to WHO regional health policy development and implementation strategies.
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-title">Member</div>
+                    <div class="company">Regional Civil Society Platform EECA</div>
+                    <div class="period">2019 - Present</div>
+                    <div class="description">
+                        Participating in coordination and communication platform for civil society organizations across Eastern Europe and Central Asia.
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Публикации -->
+        <section class="section publications-section">
+            <h2>
+                <i class="fas fa-file-alt"></i>
+                Selected Publications
+            </h2>
+            
+            <!-- ЗАМЕНИТЕ НА ВАШИ РЕАЛЬНЫЕ ПУБЛИКАЦИИ -->
+            <div class="publication-item">
+                <div class="publication-title">Building social equity and person-centred innovation into the end TB response</div>
+                <div class="publication-details">Kashnitsky, D., et al. (2024) • The International Journal of Tuberculosis and Lung Disease</div>
+                <a href="#" class="publication-link" target="_blank">
+                    <!-- ЗАМЕНИТЕ НА РЕАЛЬНУЮ ССЫЛКУ -->
+                    View Publication →
+                </a>
+            </div>
+
+            <div class="publication-item">
+                <div class="publication-title">'Performance of Illegality' Toward Migrants Living with HIV in Russia: From Social Exclusion to Deportation</div>
+                <div class="publication-details">Kashnitsky, D. (2022) • Informality, Labour Mobility and Precariousness (Springer)</div>
+                <a href="#" class="publication-link" target="_blank">
+                    <!-- ЗАМЕНИТЕ НА РЕАЛЬНУЮ ССЫЛКУ -->
+                    View Publication →
+                </a>
+            </div>
+
+            <div class="publication-item">
+                <div class="publication-title">'In Short, We Will Deport You': Disrupted temporalities of migrants with HIV in Russia</div>
+                <div class="publication-details">Kashnitsky, D. (2021) • Global Public Health</div>
+                <a href="#" class="publication-link" target="_blank">
+                    <!-- ЗАМЕНИТЕ НА РЕАЛЬНУЮ ССЫЛКУ -->
+                    View Publication →
+                </a>
+            </div>
+
+            <div class="publication-item">
+                <div class="publication-title">The Russian HIV residence ban and state control of migration</div>
+                <div class="publication-details">Kashnitsky, D. (2020) • Journal of Public Health Policy</div>
+                <a href="#" class="publication-link" target="_blank">
+                    <!-- ЗАМЕНИТЕ НА РЕАЛЬНУЮ ССЫЛКУ -->
+                    View Publication →
+                </a>
+            </div>
+
+            <div class="publication-item">
+                <div class="publication-title">'Kyrgyz clinics' in Moscow: Medical Centers for Central Asian Migrants</div>
+                <div class="publication-details">Kashnitsky, D. (2018) • Journal of Medical Anthropology</div>
+                <a href="#" class="publication-link" target="_blank">
+                    <!-- ЗАМЕНИТЕ НА РЕАЛЬНУЮ ССЫЛКУ -->
+                    View Publication →
+                </a>
+            </div>
+        </section>
+
+        <!-- Кнопка скачивания CV -->
+        <div class="download-cv">
+            <!-- ЗАМЕНИТЕ НА ПУТЬ К ВАШЕМУ CV PDF -->
+            <a href="path/to/your/cv.pdf" class="cv-button" download>
+                <i class="fas fa-download"></i>
+                Download Full CV
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Плавная анимация появления секций при скролле
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        // Наблюдаем за всеми секциями
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Добавляем интерактивность к контактной информации
+        document.querySelectorAll('.contact-item').forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.05)';
+            });
+            
+            item.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+
+        // Плавный скролл для якорных ссылок (если добавите навигацию)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
