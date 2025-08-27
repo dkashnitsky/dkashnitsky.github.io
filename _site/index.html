@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Kashnitsky - Public Health & Migration Expert</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         * {
             margin: 0;
@@ -16,7 +17,7 @@
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
             color: #212529;
-            background: linear-gradient(135deg, #F8F9FA 0%, #E9ECEF 25%, #DEE2E6 50%, #CED4DA 75%, #ADB5BD 100%);
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
             min-height: 100vh;
         }
 
@@ -27,7 +28,7 @@
         }
 
         .header {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(20px);
             border-radius: 24px;
             padding: 50px;
@@ -35,7 +36,7 @@
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
             position: relative;
             overflow: hidden;
-            border: 1px solid #e9ecef;
+            border: 1px solid #e2e8f0;
         }
 
         .header-content {
@@ -106,7 +107,7 @@
         }
 
         .bio {
-            color: #6C757D;
+            color: #4a5568;
             font-size: 1.1rem;
             line-height: 1.7;
             margin-bottom: 30px;
@@ -123,7 +124,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            color: #6C757D;
+            color: #4a5568;
             text-decoration: none;
             transition: all 0.3s ease;
             padding: 8px 16px;
@@ -151,13 +152,13 @@
         }
 
         .section {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(20px);
             border-radius: 24px;
             padding: 35px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
             transition: all 0.3s ease;
-            border: 1px solid #e9ecef;
+            border: 1px solid #e2e8f0;
         }
 
         .section:hover {
@@ -200,22 +201,21 @@
             font-size: 1.15rem;
         }
 
-        .company,
-        .institution {
+        .company {
             color: #328CC1;
             font-weight: 500;
             margin: 5px 0;
         }
 
         .period {
-            color: #6C757D;
+            color: #718096;
             font-size: 0.9rem;
             margin-bottom: 12px;
             font-weight: 500;
         }
 
         .description {
-            color: #6C757D;
+            color: #4a5568;
             line-height: 1.6;
         }
 
@@ -226,7 +226,7 @@
         }
 
         .skill-category h3 {
-            color: #0B3C5D;
+            color: #328CC1;
             margin-bottom: 10px;
             font-size: 1.1rem;
             font-weight: 600;
@@ -238,7 +238,7 @@
 
         .skill-list li {
             padding: 5px 0;
-            color: #6C757D;
+            color: #4a5568;
             position: relative;
             padding-left: 20px;
         }
@@ -257,7 +257,7 @@
         .publication-item {
             margin-bottom: 20px;
             padding: 25px;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            background: linear-gradient(135deg, #f8fafc 0%, #ebf4ff 100%);
             border-radius: 16px;
             border-left: 4px solid #0B3C5D;
             transition: all 0.3s ease;
@@ -276,7 +276,7 @@
         }
 
         .publication-details {
-            color: #6C757D;
+            color: #718096;
             font-size: 0.95rem;
             margin-bottom: 12px;
         }
@@ -325,43 +325,43 @@
             .content {
                 grid-template-columns: 1fr;
             }
-            
+                        
             .header-content {
                 flex-direction: column;
                 text-align: center;
                 gap: 30px;
             }
-            
+                        
             .profile-img {
                 width: 150px;
                 height: 150px;
             }
-            
+                        
             .contact-info {
                 justify-content: center;
                 gap: 15px;
             }
-            
+                        
             h1 {
                 font-size: 2.5rem;
             }
-            
+                        
             .subtitle {
                 font-size: 1.2rem;
             }
-            
+                        
             .bio {
                 font-size: 1rem;
             }
-            
+                        
             .section {
                 padding: 25px;
             }
-            
+                        
             .skills-grid {
                 grid-template-columns: 1fr;
             }
-            
+                        
             .header {
                 padding: 30px;
             }
@@ -438,10 +438,10 @@
                     <i class="fas fa-briefcase"></i>
                     Experience
                 </h2>
-                
+                                
                 <div class="experience-item">
                     <div class="job-title">Chair of the Board & Academic Relations</div>
-                    <div class="company"><a href="https://migrationhealth.group/en/" target="_blank" style="color: inherit; text-decoration: none;">Regional Expert Group on Migration and Health</a></div>
+                    <div class="company"><a href="https://migrationhealth.group/" target="_blank" style="color: inherit; text-decoration: none;">Regional Expert Group on Migration and Health</a></div>
                     <div class="period">2020 - Present</div>
                     <div class="description">
                         Lead operational research and advocacy initiatives improving access to healthcare for migrants across Eastern Europe and Central Asia. Contributed to adoption of national laws in three EECA countries enabling transnational HIV care for migrants. Managed secretariat team overseeing annual budget of ~USD 150K.
@@ -450,7 +450,7 @@
 
                 <div class="experience-item">
                     <div class="job-title">Postdoctoral Researcher</div>
-                    <div class="company">Cermes3, Paris Cité University, France</div>
+                    <div class="company"><a href="https://www.cermes3.cnrs.fr/" target="_blank" style="color: inherit; text-decoration: none;">Cermes3, Paris Cité University, France</a></div>
                     <div class="period">2023 - Present</div>
                     <div class="description">
                         Leading ANRS-MIE (INSERM)-funded project 'East-European Refugees in Receiving Countries' examining barriers and community engagement to improve access to HIV and TB care. Founded network uniting community-based and academic researchers. Laureate, PAUSE Program, Collège de France.
@@ -459,7 +459,7 @@
 
                 <div class="experience-item">
                     <div class="job-title">Community, Rights and Gender Program Manager</div>
-                    <div class="company">TB Europe Coalition, Kyiv, Ukraine</div>
+                    <div class="company"><a href="https://tbcoalition.eu/" target="_blank" style="color: inherit; text-decoration: none;">TB Europe Coalition, Kyiv, Ukraine</a></div>
                     <div class="period">2019 - 2020</div>
                     <div class="description">
                         Coordinated development of training modules and guidelines for members across Eastern Europe and Central Asia. Represented Coalition in WHO and Stop TB Partnership expert groups. Led initiatives addressing gender, age, and human-rights barriers to HIV, TB services.
@@ -468,7 +468,7 @@
 
                 <div class="experience-item">
                     <div class="job-title">Technical Support Specialist</div>
-                    <div class="company">European and Central Asia Union of People Living with HIV</div>
+                    <div class="company"><a href="https://ecuo.org/" target="_blank" style="color: inherit; text-decoration: none;">European and Central Asia Union of People Living with HIV</a></div>
                     <div class="period">2017 - 2018</div>
                     <div class="description">
                         Provided technical support to community organizations in 10 EECA countries for Global Fund regional program. Led regional advocacy campaign promoting migrants' rights to access HIV and TB care across EECA region.
@@ -477,7 +477,7 @@
 
                 <div class="experience-item">
                     <div class="job-title">Program Manager, Sustainability and Transition Team</div>
-                    <div class="company">Eurasian Harm Reduction Association, Vilnius, Lithuania</div>
+                    <div class="company"><a href="https://old.harmreductioneurasia.org/" target="_blank" style="color: inherit; text-decoration: none;">Eurasian Harm Reduction Association, Vilnius, Lithuania</a></div>
                     <div class="period">2015 - 2017</div>
                     <div class="description">
                         Managed Global Fund project 'Equitable Access to HIV Care Continuum in the EECA Region' in 7 countries. Led Eurasian Regional Consortium project funded by Robert Carr Fund. Directed program monitoring and evaluation.
@@ -491,7 +491,7 @@
                     <i class="fas fa-graduation-cap"></i>
                     Education
                 </h2>
-                
+                                
                 <div class="education-item">
                     <div class="degree-title">PhD in Sociology and Demography</div>
                     <div class="institution">Doctoral school 624, Sorbonne, Paris</div>
@@ -535,7 +535,7 @@
                     <i class="fas fa-cogs"></i>
                     Skills & Expertise
                 </h2>
-                
+                                
                 <div class="skills-grid">
                     <div class="skill-category">
                         <h3>Languages</h3>
@@ -589,7 +589,7 @@
                     <i class="fas fa-heart"></i>
                     Volunteering & Civil Society
                 </h2>
-                
+                                
                 <div class="experience-item">
                     <div class="job-title">Volunteer Coordinator</div>
                     <div class="company"><a href="https://www.melograno.fr/" target="_blank" style="color: inherit; text-decoration: none;">Melograno Association, France</a></div>
@@ -601,8 +601,7 @@
 
                 <div class="experience-item">
                     <div class="job-title">Board Member</div>
-                    <!-- TODO: Add link to TB Europe Coalition website when found -->
-                    <div class="company">TB Europe Coalition</div>
+                    <div class="company"><a href="https://tbcoalition.eu/" target="_blank" style="color: inherit; text-decoration: none;">TB Europe Coalition</a></div>
                     <div class="period">2021 - Present</div>
                     <div class="description">
                         Contributing to policy advocacy and strategic direction for tuberculosis response across Europe.
@@ -611,8 +610,7 @@
 
                 <div class="experience-item">
                     <div class="job-title">Board Member</div>
-                    <!-- TODO: Add link to Health Advocacy Coalition website when found -->
-                    <div class="company">Health Advocacy Coalition</div>
+                    <div class="company"><a href="https://hac.health/" target="_blank" style="color: inherit; text-decoration: none;">Health Advocacy Coalition</a></div>
                     <div class="period">2023 - Present</div>
                     <div class="description">
                         Advancing health advocacy initiatives and policy development for vulnerable populations.
@@ -621,8 +619,7 @@
 
                 <div class="experience-item">
                     <div class="job-title">Member (RCC-THV)</div>
-                    <!-- TODO: Add specific link to WHO EURO Regional Collaborating Committee when found -->
-                    <div class="company">WHO EURO Regional Collaborating Committee</div>
+                    <div class="company"><a href="https://www.who.int/europe/about-us/governance/regional-committee" target="_blank" style="color: inherit; text-decoration: none;">WHO EURO Regional Collaborating Committee</a></div>
                     <div class="period">2020 - Present</div>
                     <div class="description">
                         Contributing expertise to WHO regional health policy development and implementation strategies.
@@ -631,7 +628,6 @@
 
                 <div class="experience-item">
                     <div class="job-title">Member</div>
-                    <!-- TODO: Add link to Regional Civil Society Platform EECA when found -->
                     <div class="company">Regional Civil Society Platform EECA</div>
                     <div class="period">2019 - Present</div>
                     <div class="description">
@@ -647,7 +643,7 @@
                 <i class="fas fa-file-alt"></i>
                 Selected Publications
             </h2>
-            
+                        
             <div class="publication-item">
                 <div class="publication-title">Building social equity and person-centred innovation into the end TB response</div>
                 <div class="publication-details">Engel N., Kashnitsky D., et al. (2024) • The International Journal of Tuberculosis and Lung Disease, 28(11): 517-520</div>
