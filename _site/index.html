@@ -134,6 +134,20 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(11, 60, 93, 0.25);
         }
+        .dissertation-link {
+            color: #0B3C5D;                /* такой же цвет, как у company */
+            font-style: italic;            /* курсив */
+            text-decoration: underline;    /* подчёркивание */
+            text-decoration-style: dotted; /* пунктирное подчёркивание */
+        }
+
+        .dissertation-link:visited {
+            color: #0B3C5D; /* одинаковый цвет для уже просмотренной ссылки */
+        }
+
+        .dissertation-link:hover {
+             color: #072c44; /* чуть темнее при наведении */
+        }
 
         .contact-item i {
             font-size: 1.2rem;
@@ -493,13 +507,13 @@
                     <div class="company">Doctoral school 624, Sorbonne, Paris</div>
                     <div class="period">2023</div>
                     <div class="description">
-                        Dissertation: 
-        <a href="https://theses.hal.science/tel-04547320" target="_blank">
+                    Dissertation: 
+                        <a href="https://theses.hal.science/tel-04547320" target="_blank" class="dissertation-link">
             "Barriers and informal strategies to access medical care for irregular labor migrants living with HIV in Russia."
-        </a> 180 credits.
-    </div>
-</div>
-                
+                        </a> 180 credits.
+                    </div>
+                </div>
+  
                 <div class="education-item">
                     <div class="degree-title">Guest PhD Scholar</div>
                     <div class="company">Linköping University, Sweden</div>
