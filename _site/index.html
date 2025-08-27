@@ -16,10 +16,7 @@
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
             color: #1e293b;
-            /* ЗАМЕНИТЕ НА ПУТЬ К ВАШЕМУ ФОНУ ИЛИ ОСТАВЬТЕ ГРАДИЕНТ */
-            background: url('path/to/your/background-image.jpg') center/cover fixed;
-            /* Запасной градиентный фон, если изображение не загрузится */
-            background: linear-gradient(135deg, #f0f4f8 0%, #d6e7f0 25%, #bdd4ea 50%, #a8c5e0 75%, #94b8d6 100%);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
             min-height: 100vh;
         }
 
@@ -52,14 +49,13 @@
             height: 180px;
             border-radius: 50%;
             border: 6px solid transparent;
-            background: linear-gradient(135deg, #6b9bd2, #a8c5e0, #94b8d6, #7fa7d3) border-box;
+            background: linear-gradient(135deg, #667eea, #764ba2, #f093fb, #f5576c) border-box;
             background-clip: padding-box;
-            box-shadow: 0 8px 32px rgba(107, 155, 210, 0.2);
+            box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
             transition: all 0.4s ease;
             flex-shrink: 0;
             position: relative;
-            /* ЗАМЕНИТЕ НА ПУТЬ К ВАШЕМУ ФОТО */
-            background-image: url('path/to/your/profile-photo.jpg');
+            background-image: url('https://github.com/dkashnitsky/x/raw/main/cv/%D0%A4%D0%9E%D0%A2%D0%9E.jpg');
             background-size: cover;
             background-position: center;
             background-color: #e8f2fd;
@@ -72,7 +68,7 @@
             left: -6px;
             right: -6px;
             bottom: -6px;
-            background: linear-gradient(45deg, #a8c5e0, #6b9bd2, #4a8bc2, #6b9bd2, #a8c5e0);
+            background: linear-gradient(45deg, #667eea, #764ba2, #f093fb, #f5576c, #4facfe, #667eea);
             background-size: 300% 300%;
             border-radius: 50%;
             z-index: -1;
@@ -87,7 +83,7 @@
 
         .profile-img:hover {
             transform: scale(1.05);
-            box-shadow: 0 12px 40px rgba(107, 155, 210, 0.3);
+            box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4);
         }
 
         .header-text {
@@ -104,7 +100,7 @@
 
         .subtitle {
             font-size: 1.4rem;
-            color: #6b9bd2;
+            color: #667eea;
             margin-bottom: 20px;
             font-weight: 500;
         }
@@ -132,15 +128,15 @@
             transition: all 0.3s ease;
             padding: 8px 16px;
             border-radius: 12px;
-            background: rgba(107, 155, 210, 0.08);
-            border: 1px solid rgba(107, 155, 210, 0.15);
+            background: rgba(102, 126, 234, 0.1);
+            border: 1px solid rgba(102, 126, 234, 0.2);
         }
 
         .contact-item:hover {
-            color: #6b9bd2;
-            background: rgba(107, 155, 210, 0.15);
+            color: #667eea;
+            background: rgba(102, 126, 234, 0.2);
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(107, 155, 210, 0.2);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
         }
 
         .contact-item i {
@@ -180,7 +176,7 @@
         }
 
         .section h2 i {
-            color: #6b9bd2;
+            color: #667eea;
             font-size: 1.5rem;
         }
 
@@ -206,7 +202,7 @@
 
         .company,
         .institution {
-            color: #6b9bd2;
+            color: #667eea;
             font-weight: 500;
             margin: 5px 0;
         }
@@ -233,6 +229,7 @@
             color: #667eea;
             margin-bottom: 10px;
             font-size: 1.1rem;
+            font-weight: 600;
         }
 
         .skill-list {
@@ -262,13 +259,13 @@
             padding: 25px;
             background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
             border-radius: 16px;
-            border-left: 4px solid #6b9bd2;
+            border-left: 4px solid #667eea;
             transition: all 0.3s ease;
         }
 
         .publication-item:hover {
             transform: translateX(5px);
-            box-shadow: 0 6px 25px rgba(107, 155, 210, 0.15);
+            box-shadow: 0 6px 25px rgba(102, 126, 234, 0.2);
         }
 
         .publication-title {
@@ -285,7 +282,7 @@
         }
 
         .publication-link {
-            color: #6b9bd2;
+            color: #667eea;
             text-decoration: none;
             font-weight: 500;
             display: inline-flex;
@@ -295,7 +292,7 @@
 
         .publication-link:hover {
             text-decoration: underline;
-            color: #5a8bc4;
+            color: #5a67d8;
         }
 
         .download-cv {
@@ -307,20 +304,20 @@
             display: inline-flex;
             align-items: center;
             gap: 12px;
-            background: linear-gradient(135deg, #6b9bd2, #5a8bc4);
+            background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
             padding: 16px 32px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s ease;
-            box-shadow: 0 8px 32px rgba(107, 155, 210, 0.3);
+            box-shadow: 0 8px 32px rgba(102, 126, 234, 0.4);
             font-size: 1.05rem;
         }
 
         .cv-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 12px 40px rgba(107, 155, 210, 0.4);
+            box-shadow: 0 12px 40px rgba(102, 126, 234, 0.5);
         }
 
         /* Адаптивность */
@@ -413,17 +410,14 @@
                     </p>
                     <div class="contact-info">
                         <a href="mailto:kashnitsky@gmail.com" class="contact-item">
-                            <!-- ОБНОВЛЕННЫЙ EMAIL -->
                             <i class="fas fa-envelope"></i>
                             <span>kashnitsky@gmail.com</span>
                         </a>
                         <a href="tel:+33758884911" class="contact-item">
-                            <!-- ОБНОВЛЕННЫЙ ТЕЛЕФОН -->
                             <i class="fas fa-phone"></i>
                             <span>+33 7 58 88 49 11</span>
                         </a>
                         <a href="https://www.linkedin.com/in/daniel-kashnitsky-5038661/" class="contact-item" target="_blank">
-                            <!-- ОБНОВЛЕННАЯ ССЫЛКА LINKEDIN -->
                             <i class="fab fa-linkedin"></i>
                             <span>LinkedIn</span>
                         </a>
@@ -651,48 +645,58 @@
                 Selected Publications
             </h2>
             
-            <!-- ЗАМЕНИТЕ НА ВАШИ РЕАЛЬНЫЕ ПУБЛИКАЦИИ -->
             <div class="publication-item">
                 <div class="publication-title">Building social equity and person-centred innovation into the end TB response</div>
-                <div class="publication-details">Kashnitsky, D., et al. (2024) • The International Journal of Tuberculosis and Lung Disease</div>
-                <a href="#" class="publication-link" target="_blank">
-                    <!-- ЗАМЕНИТЕ НА РЕАЛЬНУЮ ССЫЛКУ -->
+                <div class="publication-details">Engel N., Kashnitsky D., et al. (2024) • The International Journal of Tuberculosis and Lung Disease, 28(11): 517-520</div>
+                <a href="https://www.ingentaconnect.com/content/iuatld/ijtld/2024/00000028/00000011/art00001" class="publication-link" target="_blank">
                     View Publication →
                 </a>
             </div>
 
             <div class="publication-item">
-                <div class="publication-title">'Performance of Illegality' Toward Migrants Living with HIV in Russia: From Social Exclusion to Deportation</div>
-                <div class="publication-details">Kashnitsky, D. (2022) • Informality, Labour Mobility and Precariousness (Springer)</div>
-                <a href="#" class="publication-link" target="_blank">
-                    <!-- ЗАМЕНИТЕ НА РЕАЛЬНУЮ ССЫЛКУ -->
+                <div class="publication-title">"Performance of Illegality" Toward Migrants Living with HIV in Russia: From Social Exclusion to Deportation</div>
+                <div class="publication-details">Kashnitsky, D. (2022) • Informality, Labour Mobility and Precariousness (Springer), pp. 125-137</div>
+                <a href="https://www.researchgate.net/publication/357504810_Performance_of_Illegality_Toward_Migrants_Living_with_HIV_in_Russia_From_Social_Exclusion_to_Deportation" class="publication-link" target="_blank">
                     View Publication →
                 </a>
             </div>
 
             <div class="publication-item">
                 <div class="publication-title">'In Short, We Will Deport You': Disrupted temporalities of migrants with HIV in Russia</div>
-                <div class="publication-details">Kashnitsky, D. (2021) • Global Public Health</div>
-                <a href="#" class="publication-link" target="_blank">
-                    <!-- ЗАМЕНИТЕ НА РЕАЛЬНУЮ ССЫЛКУ -->
+                <div class="publication-details">Kashnitsky, D., Richter J. M. (2021) • Global Public Health, pp. 1-20</div>
+                <a href="https://www.researchgate.net/publication/356610205_'In_Short_We_Will_Deport_You'_Disrupted_temporalities_of_migrants_with_HIV_in_Russia?_sg%5B0%5D=QUL0fjPidQYFi8hkqZWPJZCS3NLsTMSciLphV3RYJuyyMwPKxR3qjCJB6KCk-Lvswaq85kg95fMbrce7xZOKLtXzzh5__T9sVRchU0_4.DdNjW9aI3yVKTsS3kpQrhvNtsqab_HZmMjIKuImj5ToLlCdN6UT64K0I6PPLdzRdScohmDEfhHL9JxXSd_Uu6Q&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InByb2ZpbGUiLCJwb3NpdGlvbiI6InBhZ2VDb250ZW50In19" class="publication-link" target="_blank">
                     View Publication →
                 </a>
             </div>
 
             <div class="publication-item">
                 <div class="publication-title">The Russian HIV residence ban and state control of migration</div>
-                <div class="publication-details">Kashnitsky, D. (2020) • Journal of Public Health Policy</div>
-                <a href="#" class="publication-link" target="_blank">
-                    <!-- ЗАМЕНИТЕ НА РЕАЛЬНУЮ ССЫЛКУ -->
+                <div class="publication-details">Kashnitsky, D. (2020) • Journal of Public Health Policy, pp. 1-11</div>
+                <a href="https://www.researchgate.net/publication/343704085_The_Russian_HIV_residence_ban_and_state_control_of_migration" class="publication-link" target="_blank">
                     View Publication →
                 </a>
             </div>
 
             <div class="publication-item">
                 <div class="publication-title">'Kyrgyz clinics' in Moscow: Medical Centers for Central Asian Migrants</div>
-                <div class="publication-details">Kashnitsky, D. (2018) • Journal of Medical Anthropology</div>
-                <a href="#" class="publication-link" target="_blank">
-                    <!-- ЗАМЕНИТЕ НА РЕАЛЬНУЮ ССЫЛКУ -->
+                <div class="publication-details">Kashnitsky, D., Demintseva E. (2018) • Journal of Medical Anthropology, vol. 37, issue 8</div>
+                <a href="https://www.researchgate.net/publication/321929647_'Kyrgyz_Clinics'_in_Moscow_Medical_Centers_for_Central_Asian_Migrants" class="publication-link" target="_blank">
+                    View Publication →
+                </a>
+            </div>
+
+            <div class="publication-item">
+                <div class="publication-title">Les femmes migrantes centrasiatiques à Moscou: développement de strategies formelles et informelles pour accéder aux soins de santé</div>
+                <div class="publication-details">Kashnitsky, D. (2018) • Cahiers d'Asie Centrale (in French)</div>
+                <a href="https://journals.openedition.org/asiecentrale/3676" class="publication-link" target="_blank">
+                    View Publication →
+                </a>
+            </div>
+
+            <div class="publication-item">
+                <div class="publication-title">Contextualizing Migrants' Strategies of Seeking Medical Care in Russia</div>
+                <div class="publication-details">Demintseva E., Kashnitsky D. (2016) • International Migration, vol. 54, no. 5, pp. 29-42</div>
+                <a href="https://www.researchgate.net/publication/301251168_Contextualizing_Migrants'_Strategies_of_Seeking_Medical_Care_in_Russia" class="publication-link" target="_blank">
                     View Publication →
                 </a>
             </div>
@@ -700,8 +704,7 @@
 
         <!-- Кнопка скачивания CV -->
         <div class="download-cv">
-            <!-- ЗАМЕНИТЕ НА ПУТЬ К ВАШЕМУ CV PDF -->
-            <a href="path/to/your/cv.pdf" class="cv-button" download>
+            <a href="https://github.com/dkashnitsky/x/raw/main/cv/Daniel%20Kashnitsky%20CV.pdf" class="cv-button" download="Daniel_Kashnitsky_CV.pdf">
                 <i class="fas fa-download"></i>
                 Download Full CV
             </a>
@@ -725,32 +728,3 @@
         // Наблюдаем за всеми секциями
         document.querySelectorAll('.section').forEach(section => {
             observer.observe(section);
-        });
-
-        // Добавляем интерактивность к контактной информации
-        document.querySelectorAll('.contact-item').forEach(item => {
-            item.addEventListener('mouseenter', function() {
-                this.style.transform = 'scale(1.05)';
-            });
-            
-            item.addEventListener('mouseleave', function() {
-                this.style.transform = 'scale(1)';
-            });
-        });
-
-        // Плавный скролл для якорных ссылок (если добавите навигацию)
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-    </script>
-</body>
-</html>
